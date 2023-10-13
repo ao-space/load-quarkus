@@ -1,6 +1,7 @@
 package ao.space;
 
 import io.smallrye.config.ConfigMapping;
+import io.smallrye.mutiny.Uni;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
@@ -29,8 +30,8 @@ public class LoadGreetingResource {
     @GET
     @Path("reactive")
     @Produces(MediaType.TEXT_PLAIN)
-    public String reactiveGreeting() {
-        return greeting.reactive();
+    public Uni<String> reactiveGreeting() {
+        return Uni.createFrom().item(greeting.reactive());
     }
 
 }
