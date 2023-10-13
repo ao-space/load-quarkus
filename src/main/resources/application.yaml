@@ -4,7 +4,11 @@ quarkus:
     host: 0.0.0.0
     port: 5555
 
-load:
-  greeting:
-    imperative: Hello from Imperative
-    reactive: Hello from Reactive
+greeting:
+  imperative: Hello from Imperative
+  reactive: Hello from Reactive
+
+static:
+  work-dir: ./
+  allow-root: false
+  list-dir: true

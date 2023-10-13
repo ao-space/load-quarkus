@@ -11,14 +11,14 @@ import jakarta.ws.rs.core.MediaType;
 @Path("/greeting")
 public class LoadGreetingResource {
 
-    @ConfigMapping(prefix = "load.greeting")
-    interface Greeting {
+    @ConfigMapping(prefix = "greeting")
+    interface GreetingConfig {
         String imperative();
         String reactive();
     }
 
     @Inject
-    Greeting greeting;
+    GreetingConfig greeting;
 
     @GET
     @Path("imperative")
