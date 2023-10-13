@@ -1,0 +1,36 @@
+package ao.space;
+
+import io.smallrye.config.ConfigMapping;
+import jakarta.inject.Inject;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.core.MediaType;
+
+@Path("/greeting")
+public class LoadGreetingResource {
+
+    @ConfigMapping(prefix = "load.greeting")
+    interface Greeting {
+        String imperative();
+        String reactive();
+    }
+
+    @Inject
+    Greeting greeting;
+
+    @GET
+    @Path("imperative")
+    @Produces(MediaType.TEXT_PLAIN)
+    public String imperativeGreeting() {
+        return greeting.imperative();
+    }
+
+    @GET
+    @Path("reactive")
+    @Produces(MediaType.TEXT_PLAIN)
+    public String reactiveGreeting() {
+        return greeting.reactive();
+    }
+
+}

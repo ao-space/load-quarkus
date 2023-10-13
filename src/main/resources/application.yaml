@@ -1,0 +1,9 @@
+# refer: https://quarkus.io/guides/config-reference
+quarkus:
+  http:
+    root: load
+
+load:
+  greeting:
+    imperative: Hello from Imperative
+    reactive: Hello from Reactive
