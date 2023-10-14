@@ -10,6 +10,7 @@ import (
 	"gorm.io/driver/postgres"
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
+	"gorm.io/gorm/logger"
 )
 
 var (
@@ -30,10 +31,13 @@ func init() {
 	)
 
 	var err error
-	db, err = gorm.Open(postgres.Open(dsn), &gorm.Config{})
+	config := &gorm.Config{
+		Logger: logger.Default.LogMode(logger.Silent),
+	}
+	db, err = gorm.Open(postgres.Open(dsn), config)
 	if err != nil {
 		log.Printf("connecting postgre db failed, and try to fall back to local sqlite db")
-		db, err = gorm.Open(sqlite.Open("load.sqlite"), &gorm.Config{})
+		db, err = gorm.Open(sqlite.Open("load.sqlite"), config)
 		if err != nil {
 			log.Fatalf("failed to connect db: %v", err)
 		}
