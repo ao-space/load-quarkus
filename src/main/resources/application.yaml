@@ -20,5 +20,5 @@ static:
       username: loader
       password: laod
       reactive:
-        url: postgresql:///load
+        url: postgresql://localhost/load
   

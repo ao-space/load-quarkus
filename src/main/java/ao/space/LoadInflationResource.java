@@ -32,7 +32,9 @@ public class LoadInflationResource {
     @Path("/reactive/{id}")
     @GET
     public Uni<Inflation> getInflationReactively(@PathParam("id") long id) {
-        return find(id);
+        return find(id).onFailure().invoke(t -> {
+            t.printStackTrace();
+        });
     }
 
     @Inject
@@ -70,4 +72,5 @@ public class LoadInflationResource {
                 .onItem().ifNull().failWith(
                     new NotFoundException("no inflation for id: " + id));
     }
+
 }
