@@ -12,3 +12,13 @@ static:
   work-dir: ./
   allow-root: false
   list-dir: true
+
+"%prod":
+  quarkus:
+    datasource:
+      db-kind: postgresql
+      username: loader
+      password: laod
+      reactive:
+        url: postgresql:///load
+  
