@@ -1,0 +1,372 @@
+Id, RegionalMember,Year,Inflation,Unit of Measurement, Subregion, Country Code
+1,"Developing Asia",2018,2.7,%,,
+2,"Developing Asia",2019,3.2,%,,
+3,"Developing Asia",2020,3.3,%,,
+4,"Developing Asia",2021,2.6,%,,
+5,"Developing Asia",2022,4.4,%,,
+6,"Developing Asia",2023 forecast,4.2,%,,
+7,"Developing Asia",2024 forecast,3.3,%,,
+8,"Developing Asia excluding the PRC",2018,3.3,%,,
+9,"Developing Asia excluding the PRC",2019,3.5,%,,
+10,"Developing Asia excluding the PRC",2020,4.1,%,,
+11,"Developing Asia excluding the PRC",2021,4.2,%,,
+12,"Developing Asia excluding the PRC",2022,6.7,%,,
+13,"Developing Asia excluding the PRC",2023 forecast,6.2,%,,
+14,"Developing Asia excluding the PRC",2024 forecast,4.4,%,,
+15,"Caucasus and Central Asia",2018,8.2,%,Central Asia,
+16,"Caucasus and Central Asia",2019,7.4,%,Central Asia,
+17,"Caucasus and Central Asia",2020,7.7,%,Central Asia,
+18,"Caucasus and Central Asia",2021,9,%,Central Asia,
+19,"Caucasus and Central Asia",2022,12.9,%,Central Asia,
+20,"Caucasus and Central Asia",2023 forecast,10.3,%,Central Asia,
+21,"Caucasus and Central Asia",2024 forecast,7.5,%,Central Asia,
+22,"Armenia",2018,2.5,%,Central Asia,ARM
+23,"Armenia",2019,1.4,%,Central Asia,ARM
+24,"Armenia",2020,1.2,%,Central Asia,ARM
+25,"Armenia",2021,7.2,%,Central Asia,ARM
+26,"Armenia",2022,8.6,%,Central Asia,ARM
+27,"Armenia",2023 forecast,7,%,Central Asia,ARM
+28,"Armenia",2024 forecast,6.2,%,Central Asia,ARM
+29,"Azerbaijan",2018,2.4,%,Central Asia,AZE
+30,"Azerbaijan",2019,2.7,%,Central Asia,AZE
+31,"Azerbaijan",2020,2.8,%,Central Asia,AZE
+32,"Azerbaijan",2021,6.7,%,Central Asia,AZE
+33,"Azerbaijan",2022,13.9,%,Central Asia,AZE
+34,"Azerbaijan",2023 forecast,7,%,Central Asia,AZE
+35,"Azerbaijan",2024 forecast,6.5,%,Central Asia,AZE
+36,"Georgia",2018,2.6,%,Central Asia,GEO
+37,"Georgia",2019,4.9,%,Central Asia,GEO
+38,"Georgia",2020,5.2,%,Central Asia,GEO
+39,"Georgia",2021,9.6,%,Central Asia,GEO
+40,"Georgia",2022,11.9,%,Central Asia,GEO
+41,"Georgia",2023 forecast,6,%,Central Asia,GEO
+42,"Georgia",2024 forecast,4,%,Central Asia,GEO
+43,"Kazakhstan",2018,6,%,Central Asia,KAZ
+44,"Kazakhstan",2019,5.3,%,Central Asia,KAZ
+45,"Kazakhstan",2020,6.8,%,Central Asia,KAZ
+46,"Kazakhstan",2021,8,%,Central Asia,KAZ
+47,"Kazakhstan",2022,15,%,Central Asia,KAZ
+48,"Kazakhstan",2023 forecast,11.8,%,Central Asia,KAZ
+49,"Kazakhstan",2024 forecast,6.4,%,Central Asia,KAZ
+50,"Kyrgyz Republic",2018,1.5,%,Central Asia,KGZ
+51,"Kyrgyz Republic",2019,1.1,%,Central Asia,KGZ
+52,"Kyrgyz Republic",2020,6.3,%,Central Asia,KGZ
+53,"Kyrgyz Republic",2021,11.9,%,Central Asia,KGZ
+54,"Kyrgyz Republic",2022,13.9,%,Central Asia,KGZ
+55,"Kyrgyz Republic",2023 forecast,12,%,Central Asia,KGZ
+56,"Kyrgyz Republic",2024 forecast,8.6,%,Central Asia,KGZ
+57,"Tajikistan",2018,5.4,%,Central Asia,TJK
+58,"Tajikistan",2019,8,%,Central Asia,TJK
+59,"Tajikistan",2020,9.4,%,Central Asia,TJK
+60,"Tajikistan",2021,8,%,Central Asia,TJK
+61,"Tajikistan",2022,4.2,%,Central Asia,TJK
+62,"Tajikistan",2023 forecast,7,%,Central Asia,TJK
+63,"Tajikistan",2024 forecast,6.5,%,Central Asia,TJK
+64,"Turkmenistan",2018,13.2,%,Central Asia,TKM
+65,"Turkmenistan",2019,13,%,Central Asia,TKM
+66,"Turkmenistan",2020,10,%,Central Asia,TKM
+67,"Turkmenistan",2021,12.5,%,Central Asia,TKM
+68,"Turkmenistan",2022,10,%,Central Asia,TKM
+69,"Turkmenistan",2023 forecast,10,%,Central Asia,TKM
+70,"Turkmenistan",2024 forecast,10,%,Central Asia,TKM
+71,"Uzbekistan",2018,17.5,%,Central Asia,UZB
+72,"Uzbekistan",2019,14.6,%,Central Asia,UZB
+73,"Uzbekistan",2020,12.9,%,Central Asia,UZB
+74,"Uzbekistan",2021,10.7,%,Central Asia,UZB
+75,"Uzbekistan",2022,11.4,%,Central Asia,UZB
+76,"Uzbekistan",2023 forecast,11,%,Central Asia,UZB
+77,"Uzbekistan",2024 forecast,10,%,Central Asia,UZB
+78,"East Asia",2018,2,%,East Asia,
+79,"East Asia",2019,2.6,%,East Asia,
+80,"East Asia",2020,2.2,%,East Asia,
+81,"East Asia",2021,1.1,%,East Asia,
+82,"East Asia",2022,2.3,%,East Asia,
+83,"East Asia",2023 forecast,2.3,%,East Asia,
+84,"East Asia",2024 forecast,2,%,East Asia,
+85,"Hong Kong, China",2018,2.4,%,East Asia,HKG
+86,"Hong Kong, China",2019,2.9,%,East Asia,HKG
+87,"Hong Kong, China",2020,0.3,%,East Asia,HKG
+88,"Hong Kong, China",2021,1.6,%,East Asia,HKG
+89,"Hong Kong, China",2022,1.9,%,East Asia,HKG
+90,"Hong Kong, China",2023 forecast,2.3,%,East Asia,HKG
+91,"Hong Kong, China",2024 forecast,2.1,%,East Asia,HKG
+92,"Mongolia",2018,6.8,%,East Asia,MNG
+93,"Mongolia",2019,7.3,%,East Asia,MNG
+94,"Mongolia",2020,3.7,%,East Asia,MNG
+95,"Mongolia",2021,7.3,%,East Asia,MNG
+96,"Mongolia",2022,15.2,%,East Asia,MNG
+97,"Mongolia",2023 forecast,10.9,%,East Asia,MNG
+98,"Mongolia",2024 forecast,8.7,%,East Asia,MNG
+99,"Peoples Republic of China",2018,2.1,%,East Asia,CHN
+100,"Peoples Republic of China",2019,2.9,%,East Asia,CHN
+101,"Peoples Republic of China",2020,2.5,%,East Asia,CHN
+102,"Peoples Republic of China",2021,0.9,%,East Asia,CHN
+103,"Peoples Republic of China",2022,2,%,East Asia,CHN
+104,"Peoples Republic of China",2023 forecast,2.2,%,East Asia,CHN
+105,"Peoples Republic of China",2024 forecast,2,%,East Asia,CHN
+106,"Republic of Korea",2018,1.5,%,East Asia,KOR
+107,"Republic of Korea",2019,0.4,%,East Asia,KOR
+108,"Republic of Korea",2020,0.5,%,East Asia,KOR
+109,"Republic of Korea",2021,2.5,%,East Asia,KOR
+110,"Republic of Korea",2022,5.1,%,East Asia,KOR
+111,"Republic of Korea",2023 forecast,3.2,%,East Asia,KOR
+112,"Republic of Korea",2024 forecast,2,%,East Asia,KOR
+113,"Taipei China",2018,1.4,%,East Asia,TWN
+114,"Taipei China",2019,0.6,%,East Asia,TWN
+115,"Taipei China",2020,-0.2,%,East Asia,TWN
+116,"Taipei China",2021,2,%,East Asia,TWN
+117,"Taipei China",2022,2.9,%,East Asia,TWN
+118,"Taipei China",2023 forecast,2,%,East Asia,TWN
+119,"Taipei China",2024 forecast,2,%,East Asia,TWN
+120,"South Asia",2018,3.7,%,South Asia,
+121,"South Asia",2019,5,%,South Asia,
+122,"South Asia",2020,6.5,%,South Asia,
+123,"South Asia",2021,5.8,%,South Asia,
+124,"South Asia",2022,8.2,%,South Asia,
+125,"South Asia",2023 forecast,8.1,%,South Asia,
+126,"South Asia",2024 forecast,5.8,%,South Asia,
+127,"Afghanistan",2018,0.6,%,South Asia,AFG
+128,"Afghanistan",2019,2.3,%,South Asia,AFG
+129,"Afghanistan",2020,5.6,%,South Asia,AFG
+130,"Afghanistan",2021,5.2,%,South Asia,AFG
+131,"Afghanistan",2022,13.8,%,South Asia,AFG
+132,"Afghanistan",2023 forecast,,%,South Asia,AFG
+133,"Afghanistan",2024 forecast,,%,South Asia,AFG
+134,"Bangladesh",2018,5.8,%,South Asia,BGD
+135,"Bangladesh",2019,5.5,%,South Asia,BGD
+136,"Bangladesh",2020,5.7,%,South Asia,BGD
+137,"Bangladesh",2021,5.6,%,South Asia,BGD
+138,"Bangladesh",2022,6.2,%,South Asia,BGD
+139,"Bangladesh",2023 forecast,8.7,%,South Asia,BGD
+140,"Bangladesh",2024 forecast,6.6,%,South Asia,BGD
+141,"Bhutan",2018,2.6,%,South Asia,BTN
+142,"Bhutan",2019,2.8,%,South Asia,BTN
+143,"Bhutan",2020,5.6,%,South Asia,BTN
+144,"Bhutan",2021,7.3,%,South Asia,BTN
+145,"Bhutan",2022,5.6,%,South Asia,BTN
+146,"Bhutan",2023 forecast,5.5,%,South Asia,BTN
+147,"Bhutan",2024 forecast,5.1,%,South Asia,BTN
+148,"India",2018,3.4,%,South Asia,IND
+149,"India",2019,4.8,%,South Asia,IND
+150,"India",2020,6.2,%,South Asia,IND
+151,"India",2021,5.5,%,South Asia,IND
+152,"India",2022,6.7,%,South Asia,IND
+153,"India",2023 forecast,5,%,South Asia,IND
+154,"India",2024 forecast,4.5,%,South Asia,IND
+155,"Maldives",2018,-0.1,%,South Asia,MDV
+156,"Maldives",2019,0.2,%,South Asia,MDV
+157,"Maldives",2020,-1.4,%,South Asia,MDV
+158,"Maldives",2021,0.5,%,South Asia,MDV
+159,"Maldives",2022,2.3,%,South Asia,MDV
+160,"Maldives",2023 forecast,4.5,%,South Asia,MDV
+161,"Maldives",2024 forecast,2,%,South Asia,MDV
+162,"Nepal",2018,4.2,%,South Asia,NPL
+163,"Nepal",2019,4.6,%,South Asia,NPL
+164,"Nepal",2020,6.2,%,South Asia,NPL
+165,"Nepal",2021,3.6,%,South Asia,NPL
+166,"Nepal",2022,6.3,%,South Asia,NPL
+167,"Nepal",2023 forecast,7.4,%,South Asia,NPL
+168,"Nepal",2024 forecast,6.2,%,South Asia,NPL
+169,"Pakistan",2018,4.7,%,South Asia,PAK
+170,"Pakistan",2019,6.8,%,South Asia,PAK
+171,"Pakistan",2020,10.7,%,South Asia,PAK
+172,"Pakistan",2021,8.9,%,South Asia,PAK
+173,"Pakistan",2022,12.2,%,South Asia,PAK
+174,"Pakistan",2023 forecast,27.5,%,South Asia,PAK
+175,"Pakistan",2024 forecast,15,%,South Asia,PAK
+176,"Sri Lanka",2018,4.3,%,South Asia,LKA
+177,"Sri Lanka",2019,4.3,%,South Asia,LKA
+178,"Sri Lanka",2020,4.6,%,South Asia,LKA
+179,"Sri Lanka",2021,6,%,South Asia,LKA
+180,"Sri Lanka",2022,46.4,%,South Asia,LKA
+181,"Sri Lanka",2023 forecast,24.6,%,South Asia,LKA
+182,"Sri Lanka",2024 forecast,5.5,%,South Asia,LKA
+183,"Southeast Asia",2018,2.8,%,Southeast Asia,
+184,"Southeast Asia",2019,2.2,%,Southeast Asia,
+185,"Southeast Asia",2020,2.2,%,Southeast Asia,
+186,"Southeast Asia",2021,2,%,Southeast Asia,
+187,"Southeast Asia",2022,5,%,Southeast Asia,
+188,"Southeast Asia",2023 forecast,4.4,%,Southeast Asia,
+189,"Southeast Asia",2024 forecast,3.3,%,Southeast Asia,
+190,"Brunei Darussalam",2018,1,%,Southeast Asia,BRN
+191,"Brunei Darussalam",2019,-0.4,%,Southeast Asia,BRN
+192,"Brunei Darussalam",2020,1.9,%,Southeast Asia,BRN
+193,"Brunei Darussalam",2021,1.7,%,Southeast Asia,BRN
+194,"Brunei Darussalam",2022,3.7,%,Southeast Asia,BRN
+195,"Brunei Darussalam",2023 forecast,2,%,Southeast Asia,BRN
+196,"Brunei Darussalam",2024 forecast,1.6,%,Southeast Asia,BRN
+197,"Cambodia",2018,2.5,%,Southeast Asia,KHM
+198,"Cambodia",2019,1.9,%,Southeast Asia,KHM
+199,"Cambodia",2020,2.9,%,Southeast Asia,KHM
+200,"Cambodia",2021,2.9,%,Southeast Asia,KHM
+201,"Cambodia",2022,5.3,%,Southeast Asia,KHM
+202,"Cambodia",2023 forecast,3,%,Southeast Asia,KHM
+203,"Cambodia",2024 forecast,4,%,Southeast Asia,KHM
+204,"Indonesia",2018,3.3,%,Southeast Asia,IDN
+205,"Indonesia",2019,2.8,%,Southeast Asia,IDN
+206,"Indonesia",2020,3.8,%,Southeast Asia,IDN
+207,"Indonesia",2021,1.6,%,Southeast Asia,IDN
+208,"Indonesia",2022,4.2,%,Southeast Asia,IDN
+209,"Indonesia",2023 forecast,4.2,%,Southeast Asia,IDN
+210,"Indonesia",2024 forecast,3,%,Southeast Asia,IDN
+211,"Lao Peoples Dem. Rep.",2018,2,%,Southeast Asia,LAO
+212,"Lao Peoples Dem. Rep.",2019,3.3,%,Southeast Asia,LAO
+213,"Lao Peoples Dem. Rep.",2020,5.1,%,Southeast Asia,LAO
+214,"Lao Peoples Dem. Rep.",2021,3.8,%,Southeast Asia,LAO
+215,"Lao Peoples Dem. Rep.",2022,23,%,Southeast Asia,LAO
+216,"Lao Peoples Dem. Rep.",2023 forecast,16,%,Southeast Asia,LAO
+217,"Lao Peoples Dem. Rep.",2024 forecast,5,%,Southeast Asia,LAO
+218,"Malaysia",2018,1,%,Southeast Asia,MYS
+219,"Malaysia",2019,0.7,%,Southeast Asia,MYS
+220,"Malaysia",2020,-1.1,%,Southeast Asia,MYS
+221,"Malaysia",2021,2.5,%,Southeast Asia,MYS
+222,"Malaysia",2022,3.4,%,Southeast Asia,MYS
+223,"Malaysia",2023 forecast,3.1,%,Southeast Asia,MYS
+224,"Malaysia",2024 forecast,2.8,%,Southeast Asia,MYS
+225,"Myanmar",2018,5.9,%,Southeast Asia,MMR
+226,"Myanmar",2019,8.6,%,Southeast Asia,MMR
+227,"Myanmar",2020,5.7,%,Southeast Asia,MMR
+228,"Myanmar",2021,3.6,%,Southeast Asia,MMR
+229,"Myanmar",2022,16,%,Southeast Asia,MMR
+230,"Myanmar",2023 forecast,10.5,%,Southeast Asia,MMR
+231,"Myanmar",2024 forecast,8.2,%,Southeast Asia,MMR
+232,"Philippines",2018,5.2,%,Southeast Asia,PHL
+233,"Philippines",2019,2.4,%,Southeast Asia,PHL
+234,"Philippines",2020,2.4,%,Southeast Asia,PHL
+235,"Philippines",2021,3.9,%,Southeast Asia,PHL
+236,"Philippines",2022,5.8,%,Southeast Asia,PHL
+237,"Philippines",2023 forecast,6.2,%,Southeast Asia,PHL
+238,"Philippines",2024 forecast,4,%,Southeast Asia,PHL
+239,"Singapore",2018,0.4,%,Southeast Asia,SGP
+240,"Singapore",2019,0.6,%,Southeast Asia,SGP
+241,"Singapore",2020,-0.2,%,Southeast Asia,SGP
+242,"Singapore",2021,2.3,%,Southeast Asia,SGP
+243,"Singapore",2022,6.1,%,Southeast Asia,SGP
+244,"Singapore",2023 forecast,5,%,Southeast Asia,SGP
+245,"Singapore",2024 forecast,2,%,Southeast Asia,SGP
+246,"Thailand",2018,1.1,%,Southeast Asia,THA
+247,"Thailand",2019,0.7,%,Southeast Asia,THA
+248,"Thailand",2020,-0.8,%,Southeast Asia,THA
+249,"Thailand",2021,1.2,%,Southeast Asia,THA
+250,"Thailand",2022,6.1,%,Southeast Asia,THA
+251,"Thailand",2023 forecast,2.9,%,Southeast Asia,THA
+252,"Thailand",2024 forecast,2.3,%,Southeast Asia,THA
+253,"Timor-Leste",2018,2.4,%,Southeast Asia,TLS
+254,"Timor-Leste",2019,1,%,Southeast Asia,TLS
+255,"Timor-Leste",2020,0.5,%,Southeast Asia,TLS
+256,"Timor-Leste",2021,3.8,%,Southeast Asia,TLS
+257,"Timor-Leste",2022,7,%,Southeast Asia,TLS
+258,"Timor-Leste",2023 forecast,5.5,%,Southeast Asia,TLS
+259,"Timor-Leste",2024 forecast,2.8,%,Southeast Asia,TLS
+260,"Viet Nam",2018,3.5,%,Southeast Asia,VNM
+261,"Viet Nam",2019,2.8,%,Southeast Asia,VNM
+262,"Viet Nam",2020,3.2,%,Southeast Asia,VNM
+263,"Viet Nam",2021,1.8,%,Southeast Asia,VNM
+264,"Viet Nam",2022,3.2,%,Southeast Asia,VNM
+265,"Viet Nam",2023 forecast,4.5,%,Southeast Asia,VNM
+266,"Viet Nam",2024 forecast,4.2,%,Southeast Asia,VNM
+267,"The Pacific",2018,4.3,%,The Pacific,
+268,"The Pacific",2019,3,%,The Pacific,
+269,"The Pacific",2020,3,%,The Pacific,
+270,"The Pacific",2021,3.1,%,The Pacific,
+271,"The Pacific",2022,5.7,%,The Pacific,
+272,"The Pacific",2023 forecast,5,%,The Pacific,
+273,"The Pacific",2024 forecast,4.4,%,The Pacific,
+274,"Cook Islands",2018,0.1,%,The Pacific,COO
+275,"Cook Islands",2019,0,%,The Pacific,COO
+276,"Cook Islands",2020,0.7,%,The Pacific,COO
+277,"Cook Islands",2021,1.8,%,The Pacific,COO
+278,"Cook Islands",2022,4.2,%,The Pacific,COO
+279,"Cook Islands",2023 forecast,7.7,%,The Pacific,COO
+280,"Cook Islands",2024 forecast,2.3,%,The Pacific,COO
+281,"Federated States of Micronesia",2018,1.1,%,The Pacific,FSM
+282,"Federated States of Micronesia",2019,2.2,%,The Pacific,FSM
+283,"Federated States of Micronesia",2020,1,%,The Pacific,FSM
+284,"Federated States of Micronesia",2021,1.8,%,The Pacific,FSM
+285,"Federated States of Micronesia",2022,5,%,The Pacific,FSM
+286,"Federated States of Micronesia",2023 forecast,3.6,%,The Pacific,FSM
+287,"Federated States of Micronesia",2024 forecast,0.4,%,The Pacific,FSM
+288,"Fiji",2018,4.1,%,The Pacific,FJI
+289,"Fiji",2019,1.8,%,The Pacific,FJI
+290,"Fiji",2020,-2.6,%,The Pacific,FJI
+291,"Fiji",2021,0.2,%,The Pacific,FJI
+292,"Fiji",2022,4.3,%,The Pacific,FJI
+293,"Fiji",2023 forecast,4.2,%,The Pacific,FJI
+294,"Fiji",2024 forecast,3.5,%,The Pacific,FJI
+295,"Kiribati",2018,0.6,%,The Pacific,KIR
+296,"Kiribati",2019,-1.8,%,The Pacific,KIR
+297,"Kiribati",2020,2.3,%,The Pacific,KIR
+298,"Kiribati",2021,1,%,The Pacific,KIR
+299,"Kiribati",2022,5,%,The Pacific,KIR
+300,"Kiribati",2023 forecast,3.7,%,The Pacific,KIR
+301,"Kiribati",2024 forecast,3,%,The Pacific,KIR
+302,"Marshall Islands",2018,0.8,%,The Pacific,MHL
+303,"Marshall Islands",2019,-0.1,%,The Pacific,MHL
+304,"Marshall Islands",2020,-0.7,%,The Pacific,MHL
+305,"Marshall Islands",2021,2.2,%,The Pacific,MHL
+306,"Marshall Islands",2022,3.3,%,The Pacific,MHL
+307,"Marshall Islands",2023 forecast,3.7,%,The Pacific,MHL
+308,"Marshall Islands",2024 forecast,3.5,%,The Pacific,MHL
+309,"Nauru",2018,0.5,%,The Pacific,NRU
+310,"Nauru",2019,4.3,%,The Pacific,NRU
+311,"Nauru",2020,-6.6,%,The Pacific,NRU
+312,"Nauru",2021,1.2,%,The Pacific,NRU
+313,"Nauru",2022,2.3,%,The Pacific,NRU
+314,"Nauru",2023 forecast,2.5,%,The Pacific,NRU
+315,"Nauru",2024 forecast,1.9,%,The Pacific,NRU
+316,"Niue",2018,9.6,%,The Pacific,NIU
+317,"Niue",2019,2.4,%,The Pacific,NIU
+318,"Niue",2020,2.3,%,The Pacific,NIU
+319,"Niue",2021,,%,The Pacific,NIU
+320,"Niue",2022,,%,The Pacific,NIU
+321,"Niue",2023 forecast,,%,The Pacific,NIU
+322,"Niue",2024 forecast,,%,The Pacific,NIU
+323,"Palau",2018,2,%,The Pacific,PLW
+324,"Palau",2019,0.6,%,The Pacific,PLW
+325,"Palau",2020,0.7,%,The Pacific,PLW
+326,"Palau",2021,0.5,%,The Pacific,PLW
+327,"Palau",2022,10.2,%,The Pacific,PLW
+328,"Palau",2023 forecast,5,%,The Pacific,PLW
+329,"Palau",2024 forecast,5.5,%,The Pacific,PLW
+330,"Papua New Guinea",2018,4.7,%,The Pacific,PNG
+331,"Papua New Guinea",2019,3.6,%,The Pacific,PNG
+332,"Papua New Guinea",2020,4.9,%,The Pacific,PNG
+333,"Papua New Guinea",2021,4.5,%,The Pacific,PNG
+334,"Papua New Guinea",2022,6,%,The Pacific,PNG
+335,"Papua New Guinea",2023 forecast,5,%,The Pacific,PNG
+336,"Papua New Guinea",2024 forecast,5,%,The Pacific,PNG
+337,"Samoa",2018,3.7,%,The Pacific,WSM
+338,"Samoa",2019,2.2,%,The Pacific,WSM
+339,"Samoa",2020,1.5,%,The Pacific,WSM
+340,"Samoa",2021,-3,%,The Pacific,WSM
+341,"Samoa",2022,8.8,%,The Pacific,WSM
+342,"Samoa",2023 forecast,10.2,%,The Pacific,WSM
+343,"Samoa",2024 forecast,2,%,The Pacific,WSM
+344,"Solomon Islands",2018,3.5,%,The Pacific,SLB
+345,"Solomon Islands",2019,1.6,%,The Pacific,SLB
+346,"Solomon Islands",2020,3,%,The Pacific,SLB
+347,"Solomon Islands",2021,-0.2,%,The Pacific,SLB
+348,"Solomon Islands",2022,5.5,%,The Pacific,SLB
+349,"Solomon Islands",2023 forecast,4.5,%,The Pacific,SLB
+350,"Solomon Islands",2024 forecast,3.7,%,The Pacific,SLB
+351,"Tonga",2018,-3.9,%,The Pacific,TON
+352,"Tonga",2019,4,%,The Pacific,TON
+353,"Tonga",2020,0.2,%,The Pacific,TON
+354,"Tonga",2021,1.4,%,The Pacific,TON
+355,"Tonga",2022,8.5,%,The Pacific,TON
+356,"Tonga",2023 forecast,9.4,%,The Pacific,TON
+357,"Tonga",2024 forecast,1.5,%,The Pacific,TON
+358,"Tuvalu",2018,2.2,%,The Pacific,TUV
+359,"Tuvalu",2019,3.5,%,The Pacific,TUV
+360,"Tuvalu",2020,1.6,%,The Pacific,TUV
+361,"Tuvalu",2021,6.7,%,The Pacific,TUV
+362,"Tuvalu",2022,7.6,%,The Pacific,TUV
+363,"Tuvalu",2023 forecast,3.3,%,The Pacific,TUV
+364,"Tuvalu",2024 forecast,2.8,%,The Pacific,TUV
+365,"Vanuatu",2018,2.3,%,The Pacific,VUT
+366,"Vanuatu",2019,2.8,%,The Pacific,VUT
+367,"Vanuatu",2020,5.3,%,The Pacific,VUT
+368,"Vanuatu",2021,2.3,%,The Pacific,VUT
+369,"Vanuatu",2022,4.8,%,The Pacific,VUT
+370,"Vanuatu",2023 forecast,4,%,The Pacific,VUT
+371,"Vanuatu",2024 forecast,3,%,The Pacific,VUT

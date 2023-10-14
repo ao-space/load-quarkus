@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  load_db:
+    image: postgres:latest
+    env_file:
+      - .env
+    volumes:
+      - ./dataset:/docker-entrypoint-initdb.d
+    ports:
+      - 5432:5432
