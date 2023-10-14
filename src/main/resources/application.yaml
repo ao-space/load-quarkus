@@ -18,7 +18,7 @@ static:
     datasource:
       db-kind: postgresql
       username: loader
-      password: laod
+      password: load
       reactive:
         url: postgresql://localhost/load
   
