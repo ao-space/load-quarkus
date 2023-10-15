@@ -5,6 +5,7 @@ import java.util.concurrent.ExecutionException;
 
 import io.quarkus.hibernate.reactive.panache.Panache;
 import io.quarkus.hibernate.reactive.panache.PanacheEntity;
+import io.quarkus.logging.Log;
 import io.smallrye.mutiny.Uni;
 import io.vertx.mutiny.core.Vertx;
 import jakarta.inject.Inject;
@@ -23,7 +24,7 @@ public class LoadInflationResource {
     static class Inflation extends PanacheEntity {
         public String region;
         public String year;
-        public float inflation;
+        public Double inflation;
         public String unit;
         public String subregion;
         public String country;
@@ -33,7 +34,7 @@ public class LoadInflationResource {
     @GET
     public Uni<Inflation> getInflationReactively(@PathParam("id") long id) {
         return find(id).onFailure().invoke(t -> {
-            t.printStackTrace();
+            Log.errorf(t, "find inflation error for id: %d", id);
         });
     }
 

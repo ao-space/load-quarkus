@@ -21,4 +21,4 @@ static:
       password: load
       reactive:
         url: postgresql://localhost/load
-  
+        max-size: 20

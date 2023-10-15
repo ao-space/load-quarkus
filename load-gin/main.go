@@ -42,6 +42,10 @@ func init() {
 			log.Fatalf("failed to connect db: %v", err)
 		}
 	}
+
+	var sqlDB, _ = db.DB()
+	sqlDB.SetMaxIdleConns(10)
+	sqlDB.SetMaxOpenConns(20)
 }
 
 func main() {
