@@ -29,4 +29,14 @@ public class LoadInflationResourceTest {
              .statusCode(200)
              .body(containsString("Asia"));
     }
+
+    @Test
+    public void testVirtualThreadGetInlfation() {
+        given()
+          .pathParam("id", 1)
+          .when().get("/inflations/virtual/{id}")
+          .then()
+             .statusCode(200)
+             .body(containsString("Asia"));
+    }
 }
