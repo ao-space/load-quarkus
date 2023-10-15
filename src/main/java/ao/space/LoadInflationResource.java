@@ -1,7 +1,6 @@
 package ao.space;
 
 import ao.space.LoadInflationService.Inflation;
-import io.quarkus.logging.Log;
 import io.smallrye.common.annotation.RunOnVirtualThread;
 import io.smallrye.mutiny.Uni;
 import jakarta.inject.Inject;

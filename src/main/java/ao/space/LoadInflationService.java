@@ -11,7 +11,6 @@ import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
-import jakarta.ws.rs.NotFoundException;
 
 @ApplicationScoped
 public class LoadInflationService {
