@@ -38,9 +38,9 @@ public class LoadInflationResource {
     @Path("/reactive/{id}")
     @GET
     public Uni<Inflation> getInflationReactively(@PathParam("id") long id) {
-        return findAsync(id).onFailure().invoke(t -> {
-            Log.errorf(t, "find inflation error for id: %d", id);
-        });
+        return findAsync(id)
+            .onFailure().invoke(
+                t -> Log.errorf(t, "find inflation error for id: %d", id));
     }
 
     @Path("/virtual/{id}")
@@ -80,8 +80,8 @@ public class LoadInflationResource {
 
     private Uni<Inflation> findAsync(long id) {
         return Inflation.<Inflation>findById(id)
-                .onItem().ifNull().failWith(
-                    new NotFoundException("no inflation for id: " + id));
+            .onItem().ifNull().failWith(
+                new NotFoundException("no inflation for id: " + id));
     }
 
 }
