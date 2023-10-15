@@ -46,12 +46,9 @@ public class LoadInflationResource {
     public Inflation getInflationImperatively(@PathParam("id") long id) {
         var f = new CompletableFuture<Inflation>();
         vertx.runOnContext(() -> 
-            Panache.withSession(() -> {
-                return find(id)
-                    .onItem().invoke(i -> f.complete(i))
-                    .onFailure().invoke(t -> f.completeExceptionally(t));
-            })
-            .subscribe().with(i -> {})
+            Panache.withSession(() -> find(id))
+            .subscribe()
+            .with(i -> f.complete(i), t -> f.completeExceptionally(t))
         );
 
         try {
