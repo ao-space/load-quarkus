@@ -30,7 +30,7 @@ public class LoadInflationService {
     Vertx vertx;
 
     public Uni<Inflation> findAsync(long id) {
-        return Inflation.<Inflation>findById(id);
+        return Inflation.findById(id);
     }
 
     public Inflation find(long id) {
