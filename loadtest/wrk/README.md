@@ -73,6 +73,10 @@ GPU: Intel Iris Plus Graphics
 Memory: 20313MiB / 32768MiB 
 ```
 
+You can use the `monitor.sh` script to periodically print CPU and memory(rss) information during the test. The script is located in the `loadtest` folder.
+
+
+
 [wrk]: <https://github.com/wg/wrk>
 [gin]: <https://github.com/gin-gonic/gin>
 [gorm]: <https://github.com/go-gorm/gorm>
