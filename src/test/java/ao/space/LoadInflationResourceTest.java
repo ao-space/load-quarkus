@@ -13,58 +13,58 @@ import org.jboss.resteasy.reactive.RestResponse.StatusCode;
 public class LoadInflationResourceTest {
 
     @Test
-    public void testImperativeGetInlfation() {
+    public void testImperativeGetInflation() {
         given()
           .pathParam("id", 1)
-          .when().get("/inflations/imperative/{id}")
+          .when().get("/inflation/imperative/{id}")
           .then()
              .statusCode(StatusCode.OK)
              .body(containsString("Asia"));
     }
 
     @Test
-    public void testImperativeGetInlfationNotFound() {
+    public void testImperativeGetInflationNotFound() {
         given()
           .pathParam("id", Integer.MAX_VALUE)
-          .when().get("/inflations/imperative/{id}")
+          .when().get("/inflation/imperative/{id}")
           .then()
              .statusCode(StatusCode.NOT_FOUND);
     }
 
     @Test
-    public void testReactiveGetInlfation() {
+    public void testReactiveGetInflation() {
         given()
           .pathParam("id", 1)
-          .when().get("/inflations/reactive/{id}")
+          .when().get("/inflation/reactive/{id}")
           .then()
              .statusCode(StatusCode.OK)
              .body(containsString("Asia"));
     }
 
     @Test
-    public void testReactiveGetInlfationNotFound() {
+    public void testReactiveGetInflationNotFound() {
         given()
           .pathParam("id", Integer.MAX_VALUE)
-          .when().get("/inflations/reactive/{id}")
+          .when().get("/inflation/reactive/{id}")
           .then()
              .statusCode(StatusCode.NOT_FOUND);
     }
 
     @Test
-    public void testVirtualThreadGetInlfation() {
+    public void testVirtualThreadGetInflation() {
         given()
           .pathParam("id", 1)
-          .when().get("/inflations/virtual/{id}")
+          .when().get("/inflation/virtual/{id}")
           .then()
              .statusCode(StatusCode.OK)
              .body(containsString("Asia"));
     }
 
     @Test
-    public void testVirtualThreadGetInlfationNotFound() {
+    public void testVirtualThreadGetInflationNotFound() {
         given()
           .pathParam("id", Integer.MAX_VALUE)
-          .when().get("/inflations/virtual/{id}")
+          .when().get("/inflation/virtual/{id}")
           .then()
              .statusCode(StatusCode.NOT_FOUND);
     }

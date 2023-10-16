@@ -16,8 +16,8 @@ import jakarta.persistence.Table;
 public class LoadInflationService {
 
     @Entity
-    @Table(name = "inflations")
-    static class Inflation extends PanacheEntity {
+    @Table(name = "inflation")
+    public static class Inflation extends PanacheEntity {
         public String region;
         public String year;
         public Double inflation;
@@ -38,7 +38,7 @@ public class LoadInflationService {
         vertx.runOnContext(() -> 
             Panache.withSession(() -> findAsync(id))
             .subscribe()
-            .with(i -> f.complete(i), t -> f.completeExceptionally(t))
+            .with(f::complete, f::completeExceptionally)
         );
 
         try {

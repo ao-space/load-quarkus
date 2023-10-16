@@ -53,7 +53,7 @@ func main() {
 
 	r := gin.New()
 	r.GET("/greeting", handleGreeting)
-	r.GET("/inflations/:id", handleInflation)
+	r.GET("/inflation/:id", handleInflation)
 	r.Static("/static", static_dir)
 
 	log.Printf("start to serve on [%v]", port)

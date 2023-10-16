@@ -9,7 +9,7 @@ import jakarta.ws.rs.NotFoundException;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;
 
-@Path("/inflations")
+@Path("/inflation")
 public class LoadInflationResource {
 
     @Inject

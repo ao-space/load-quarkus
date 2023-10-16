@@ -1,4 +1,4 @@
-CREATE TABLE inflations (
+CREATE TABLE inflation (
     id INT PRIMARY KEY,
     region TEXT,
     year TEXT,
@@ -8,7 +8,7 @@ CREATE TABLE inflations (
     country TEXT
 );
 
-COPY inflations
+COPY inflation
 FROM '/docker-entrypoint-initdb.d/inflation.csv'
 DELIMITER ','
 CSV HEADER;
