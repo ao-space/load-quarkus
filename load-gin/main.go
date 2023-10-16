@@ -78,7 +78,7 @@ func handleInflation(c *gin.Context) {
 	id := c.Param("id")
 
 	var inflation Inflation
-	r := db.First(&inflation, id)
+	r := db.Table("inflation").First(&inflation, id)
 	if r.Error != nil {
 		c.String(http.StatusNotFound, "sql error: %v", r.Error)
 	} else {
