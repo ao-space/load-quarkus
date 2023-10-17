@@ -38,7 +38,7 @@ After starting the database, you need to start the web server that you are going
 - For starting load-quarkus server of native version:
 
     ```shell script
-    ./mvnw package -Dnative && \
+    ./mvnw package -Dnative -Dquarkus.native.monitoring=jvmstat,heapdump && \
     ./target/load-quarkus-0.0.1-runner
     ```
 
