@@ -1,10 +1,11 @@
-# Load Test with Wrk
+# Load Test with Database Involved
 
-[wrk][wrk] is a pretty handy tool to find the proper rps rate for further performance testing. In this project, you can find three lua scripts which are used to run, measure and compare laod test with [wrk][wrk] tool. These scripts can be used for different purpose:
+[wrk][wrk] is a pretty handy tool to find the proper rps rate for further performance testing. In this project, you can find four lua scripts which are used by [wrk][wrk] to run, measure and compare load test with database involved situation. These scripts are used for different purpose:
 
 - `gin.lua`: It will be used to conduct a baseline load test to evaluate the performance of the web API built with the [gin][gin] & [gorm][gorm] framework, which are popular frameworks in Golang.
 - `quarkus-imperative.lua`: It will be used to conduct a load test to evaluate the performance of the web API built with the [quarkus][quarkus] framework using an **imperative** implementation.
 - `quarkus-reactive.lua`: It will be used to conduct a load test to evaluate the performance of the web API built with the [quarkus][quarkus] framework using a **reactive** implementation.
+- `quarkus-virtual.lua`: It will be used to conduct a load test to evaluate the performance of the web API built with the [quarkus][quarkus] framework using a **virtual thread** implementation.
 
 ## Prepare
 
@@ -38,11 +39,11 @@ After starting the database, you need to start the web server that you are going
 - For starting load-quarkus server of native version:
 
     ```shell script
-    ./mvnw package -Dnative -Dquarkus.native.monitoring=jvmstat,heapdump && \
+    ./mvnw package -Dnative -Dquarkus.native.monitoring=jvsmstat,heapdump && \
     ./target/load-quarkus-0.0.1-runner
     ```
 
-*Note:* For native build of load-quarkus, there are several different ways to accomplish. You can use [this document](https://quarkus.io/guides/building-native-image) to get more details.
+*Note:* The native build parameter `-Dquarkus.native.monitoring=jvsmstat,heapdump` is used to make the process observable to performance monitoring tool, such as [VisualVM][VisualVM]. Regarding native build, there are several different ways to accomplish. You can use [this document](https://quarkus.io/guides/building-native-image) for getting more details.
 
 
 ## Test
@@ -76,22 +77,22 @@ Memory: 32768MiB
 You can use the `monitor.sh` script to periodically print CPU and memory(rss) information during the test. The script is located in the `loadtest` folder. 
 
 
-For all result, we used the same thread count and duration, and they are: 8 threads and 30 seconds. The cpu and memory are rough average value which means they are not very accurate but good enough to illustate the actual usage. The matrix of testing test for gin and quarkus-reactive(native) are following:
+For all result, we used the same thread count and duration, and they are: 8 threads and 30 seconds. The cpu and memory are rough average value which means they are not very accurate but should be good enough to illustrate the actual usage. The matrix of testing result for gin and quarkus-reactive(native) are following:
 
-|no| case | connect| cpu(avg %) | memory(rss KiB)| qps (Requests/sec)| 99% delay percentile| errors|
-|-|----|-----|------|-------|------|----|--|
-|1|gin | `-c100` | 150 | 26212 | 7608.42 | 158.43ms|0|
-|2|quarkus |`-c100` | 150 | 72884 | 3839.28 | 39.23ms |0|
-|3|gin |`-c200` | 150 | 32708 | 7609.25 | 440.41ms |read: 49|
-|4|quarkus |`-c200` | 150 | 72800 | 3926.05 | 74.29ms |read 46|
-|5|gin |`-c300` | 150 | 36068 | 8106.72 | 748.97ms |read: 139|
-|6|quarkus |`-c300` | 150 | 75688 | 3932.40 | 108.36ms |read 200|
-|7|gin |`-c500` | 150 | 48964 | 8202.28 | 1.19s |read: 422, timeout 64|
-|8|quarkus |`-c500` | 150 | 88184 | 3878.22 | 188.08ms |read 462|
-|9|gin |`-c1000` | 150 | 77260 | 7653.94 | 1.42s |read: 3056, timeout 1385|
-|10|quarkus |`-c1000` | 150 | 155596 | 3706.55 | 381.61ms |read 3342|
+| no | case    | connect  | cpu(avg %) | memory(rss KiB) | qps (Requests/sec) | 99% percentile latency | errors                   |
+|----|---------|----------|------------|-----------------|--------------------|------------------------|--------------------------|
+| 1  | gin     | `-c100`  | 150        | 26212           | 7608.42            | 158.43ms               | 0                        |
+| 2  | quarkus | `-c100`  | 150        | 72884           | 3839.28            | 39.23ms                | 0                        |
+| 3  | gin     | `-c200`  | 150        | 32708           | 7609.25            | 440.41ms               | read: 49                 |
+| 4  | quarkus | `-c200`  | 150        | 72800           | 3926.05            | 74.29ms                | read 46                  |
+| 5  | gin     | `-c300`  | 150        | 36068           | 8106.72            | 748.97ms               | read: 139                |
+| 6  | quarkus | `-c300`  | 150        | 75688           | 3932.40            | 108.36ms               | read 200                 |
+| 7  | gin     | `-c500`  | 150        | 48964           | 8202.28            | 1.19s                  | read: 422, timeout 64    |
+| 8  | quarkus | `-c500`  | 150        | 88184           | 3878.22            | 188.08ms               | read 462                 |
+| 9  | gin     | `-c1000` | 150        | 77260           | 7653.94            | 1.42s                  | read: 3056, timeout 1385 |
+| 10 | quarkus | `-c1000` | 150        | 155596          | 3706.55            | 381.61ms               | read 3342                |
 
-The original test result:
+The original test data:
 
 1. gin with `-c100`:
 
@@ -295,3 +296,4 @@ The original test result:
 [gin]: <https://github.com/gin-gonic/gin>
 [gorm]: <https://github.com/go-gorm/gorm>
 [quarkus]: <https://github.com/quarkusio/quarkus>
+[VisualVM]: <https://visualvm.github.io/>
