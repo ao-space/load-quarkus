@@ -51,7 +51,8 @@ After starting the database, you need to start the web server that you are going
 
 ## Test
 
-For testing, you can use different wrk parameters and relative lua script to test and get the measurement results.
+In this part, we will use a controlled wrk parameter (the amount of connection) with the corresponding lua script to test and 
+get the measurement results.
 
 *Note:* for knowing more details of test results, it's better to use the `--latency` option to get "Latency Distribution". 
 
