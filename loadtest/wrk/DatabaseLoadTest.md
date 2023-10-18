@@ -1,8 +1,11 @@
 # Load Test with Database Involved
 
-[wrk][wrk] is a pretty handy tool to find the proper rps rate for further performance testing. In this project, you can find four lua scripts which are used by [wrk][wrk] to run, measure and compare load test with database involved situation. These scripts are used for different purpose:
+In this project, you can find four lua scripts which are used by [wrk][wrk] to run,
+measure and compare load test with a database-involved situation.
 
-- `gin.lua`: It will be used to conduct a baseline load test to evaluate the performance of the web API built with the [gin][gin] & [gorm][gorm] framework, which are popular frameworks in Golang.
+These scripts are used for different purposes:
+
+- `gin.lua`: It will be used to conduct a baseline load test to evaluate the performance of the web API built with the [gin][gin] + [gorm][gorm] framework, which are popular frameworks in Golang.
 - `quarkus-imperative.lua`: It will be used to conduct a load test to evaluate the performance of the web API built with the [quarkus][quarkus] framework using an **imperative** implementation.
 - `quarkus-reactive.lua`: It will be used to conduct a load test to evaluate the performance of the web API built with the [quarkus][quarkus] framework using a **reactive** implementation.
 - `quarkus-virtual.lua`: It will be used to conduct a load test to evaluate the performance of the web API built with the [quarkus][quarkus] framework using a **virtual thread** implementation.
@@ -36,7 +39,7 @@ After starting the database, you need to start the web server that you are going
     java -jar target/load-quarkus-0.0.1-runner.jar 
     ```
 
-- For starting load-quarkus server of native version:
+- For starting load-quarkus server of a native version:
 
     ```shell script
     ./mvnw package -Dnative -Dquarkus.native.monitoring=jvsmstat,heapdump && \
@@ -50,7 +53,7 @@ After starting the database, you need to start the web server that you are going
 
 For testing, you can use different wrk parameters and relative lua script to test and get the measurement results.
 
-*Note:* for knowing more details of test results, it 's better to use the `--latency` option to get "Latency Distribution". 
+*Note:* for knowing more details of test results, it's better to use the `--latency` option to get "Latency Distribution". 
 
 ```shell script
 wrk % wrk -c100 -t8 -d30s -s ./gin.lua --latency "http://localhost:5444"
@@ -74,10 +77,14 @@ GPU: Intel Iris Plus Graphics
 Memory: 32768MiB 
 ```
 
-You can use the `monitor.sh` script to periodically print CPU and memory(rss) information during the test. The script is located in the `loadtest` folder. 
+You can run the `monitor.sh` script to periodically sample CPU and memory(rss) information during the test. 
+The script is located in the `loadtest` folder.
 
+For all results, we used the same thread count and duration, and they are: 8 threads and 30 seconds.
+The cpu and memory are rough average value sampled from `monitor.sh` script
+that means they are not very accurate but should be good enough to compare the actual usage.
 
-For all result, we used the same thread count and duration, and they are: 8 threads and 30 seconds. The cpu and memory are rough average value which means they are not very accurate but should be good enough to illustrate the actual usage. The matrix of testing result for gin and quarkus-reactive(native) are following:
+The matrix of testing result for gin and quarkus-reactive(native) are following:
 
 | no | case    | connect  | cpu(avg %) | memory(rss KiB) | qps (Requests/sec) | 99% percentile latency | errors                   |
 |----|---------|----------|------------|-----------------|--------------------|------------------------|--------------------------|
@@ -91,6 +98,10 @@ For all result, we used the same thread count and duration, and they are: 8 thre
 | 8  | quarkus | `-c500`  | 150        | 88184           | 3878.22            | 188.08ms               | read 462                 |
 | 9  | gin     | `-c1000` | 150        | 77260           | 7653.94            | 1.42s                  | read: 3056, timeout 1385 |
 | 10 | quarkus | `-c1000` | 150        | 155596          | 3706.55            | 381.61ms               | read 3342                |
+
+From the above matrix we can clearly see that the gin+gorm has better performance than quarkus,
+that is about two times of qps, and memory consumption has almost the same conclusion.
+But quarkus has better latency distribution than gin, which is pretty stable in every round of testing.
 
 The original test data:
 
